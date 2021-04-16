@@ -1,0 +1,94 @@
+body{
+  /*this is to center the container*/
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: rgb(12,139,217);
+}
+
+.terminal{
+  /*this is the container*/
+  width: 90%;
+  height: 90vh;
+  background-color: rgb(1,7,40);
+  border-radius: 10px;
+  position: relative;
+  color: white;
+  text-align: left;
+  padding: 0px 10px;
+}
+
+
+/* Icon shaped like circle that the top left of the container*/
+.icon{
+  /* Icon container*/
+  margin: 5px 10px;
+  width: 50px;
+  text-align: center;
+}
+
+.icon-blue{
+  display: inline-block;
+  background-color: blue;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0px 2px;
+}
+
+.icon-yellow{
+  display: inline-block;
+  background-color: yellow;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0px 2px;
+}
+
+.icon-red{
+  display: inline-block;
+  background-color: red;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0px 2px;
+}
+
+.type{
+  /* this is the blink div at the end of the text*/
+  margin: 0;
+  display: inline-block;/*this to make the div to be in the same line width the text*/
+  background-color: white;
+  height: 15px;
+  width: 5px; 
+  animation-name: blink;
+  animation-duration: 700ms;
+  animation-iteration-count: infinite;
+}
+
+/* the blinking animation*/
+@keyframes blink{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+p{
+  margin: 0;
+  display: inline;
+  text-align: left;
+}
+
+/* this determine the animation which happens to the text when the site load*/
+span{
+  /*from or starting of the animation*/
+  display: none;
+}
+
+.fade{
+  /*To or endpoint of the animation*/
+  display: inline;
+}
